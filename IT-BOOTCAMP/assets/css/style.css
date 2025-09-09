@@ -52,10 +52,6 @@ ul,li{
 /*==================== NAVBAR ====================*/
 nav {
     display: flex;
-    background: #FFF8F4;
-	  background: linear-gradient(90deg, rgba(255, 248, 244, 1) 70%, rgba(141, 208, 249, 1) 100%);
-    justify-content: space-around;
-    /* padding: 1rem 2rem; */
     position: sticky;
     top: 0;
     left: 0;
@@ -68,10 +64,12 @@ nav {
 nav .logo {
     display: flex;
     align-items: center;
-    width: 80vh;
 }
-nav .logo img{
-    width: 10%;
+
+nav .logo img {
+    /* PERBAIKAN: Gunakan height untuk ukuran logo yang lebih konsisten */
+    height: 60px; 
+    width: auto;
     margin-right: 20px;
 }
 
@@ -83,11 +81,13 @@ nav .logo span {
 }
 
 nav ul {
-    
     display: flex;
     align-items: center;
     gap: 40px;
     list-style: none;
+    margin: 0; /* Reset margin default dari ul */
+    padding: 0; /* Reset padding default dari ul */
+    /* Transisi untuk animasi smooth saat menu muncul */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -98,8 +98,8 @@ nav ul li a {
     background: linear-gradient(180deg, #58090F, #7C0211);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 8px 0;
     transition: background 300ms, border-bottom 300ms;
     border-bottom: 1px solid rgba(221, 37, 37, 0);
@@ -109,19 +109,20 @@ nav ul li a:hover {
     background: linear-gradient(180deg, #000000b0, #ff0000);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border-bottom: 1px solid #ff0000b0;
 }
 
 .menu-icon {
     font-size: 2.5rem;
-    display: none;
+    display: none; /* Sembunyi di desktop */
+    cursor: pointer; /* Tambahkan cursor pointer */
     background: linear-gradient(180deg, #58090F, #7C0211);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Tombol daftar  */
@@ -143,11 +144,11 @@ nav ul li a:hover {
     height: 20px;
 }
 
-
 nav ul li a.register-btn:hover {
     background: #E39738;
     background-color: #4b2e0e;
     transform: scale(1.05);
+    border-bottom: none; /* Hapus border hover pada tombol */
 }
 
 /* hero section */
@@ -491,137 +492,109 @@ nav ul li a.register-btn:hover {
 }
 
 
+
 /* =============== section Footer ================ */
-footer {
-	background-color: #E39738;
-	color: white;
-  }
-  
-.footer-container {
-	display: flex;
-	position: relative;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	flex-direction: row;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-  
-.footer-text{
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
-	gap: 140px;
-	padding: 30px 20px 0 250px;
-}
-  
-.footer-section h4 {
-	font-size: 1.3em;
-	margin-bottom: 10px;
-	font-family: "Figtree";
-}
-  
+
 .footer-section ul li {
-	list-style: none;
-	margin: 15px 0;
+  list-style: none;
+  margin: 15px 0;
 }
-  
+
 .footer-section ul li a {
-	color: white;
-	font-family: "Figtree";
-	text-decoration: none;
-	transition: color 0.3s ease;
-	font-size: 1.0em;
+  color: white;
+  font-family: "Figtree";
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.0em;
 }
-  
+
 .footer-section ul li a:hover {
-	color: #b3b3b3;
+  color: #b3b3b3;
 }
-  
+
 .logo-section {
-	text-align: center;
-	max-width: 170px;
-	margin: 20px 0 0 40px;
+  text-align: center;
+  max-width: 170px;
+  margin: 20px 0 0 40px;
 }
-  
+
 .logo-footer {
-	width: 170px;
-	height: 170px;
-	justify-content: center;
+  width: 170px;
+  height: 170px;
+  justify-content: center;
 }
-  
+
 .logo-section h3 {
-	font-size: 1.8em;
-	letter-spacing: 1px;
-	font-family: "Figtree";
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-family: "Figtree";
 }
-  
+
 .footer-bottom {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px 20px;
-	background-color: #E39738;
-  }  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
 
 .footer-line {
-	width: 100%;
-	height: 5px;
-	background-color: rgb(255, 255, 255);
-	margin-bottom: 10px;
-  }
-  
-  .footer-bottom p {
-	margin: 5px 0;
-	color: white;
-	font-size: 18px;
-	text-align: center;
-	font-family: "Figtree";
-  }
-  
-  .footer-logo-container {
-	display: flex;
-	align-items: center;
-  }
-  
-  .footer-logo {
-	max-width: 50px;
-	margin: 10px 10px 10px 0;
-  }
-  
-  .footer-logo-container p {
-	margin: 0;
-	color: white;
-	font-size: 18px;
-	font-family: "Figtree";
-  }
-  
-  .social-icons {
-	display: flex;
-	justify-content: center;
-	margin-top: 5px;
-  }
-  
-  .social-icons a {
-	text-decoration: none;
-	color: white;
-	margin: 0 5px;
-	font-size: 20px;
-	transition: color 0.3s ease;
-	background-color: #ffffff0c;
-	border-radius: 50%;
-	line-height: 2px;
-	padding: 5px;
-	display: flex;
-	align-items: center;
-	font-family: "Figtree";
-  }
-  
-  .social-icons a i {
-	justify-content: center;
-  }
-  
-  .social-icons a:hover {
-	color: #ffffffc2;
-	background-color: #000000b0;
-  }
+  width: 100%;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Figtree";
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 50px;
+  margin: 10px 10px 10px 0;
+}
+
+.footer-logo-container p {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-family: "Figtree";
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  background-color: #ffffff0c;
+  border-radius: 50%;
+  line-height: 2px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-family: "Figtree";
+}
+
+.social-icons a i {
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: #ffffffc2;
+  background-color: #000000b0;
+}
