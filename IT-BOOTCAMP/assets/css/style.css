@@ -722,6 +722,7 @@ footer {
 }
 
 /* =============== Responsive Media Queries ================ */
+
 /* Untuk Tablet (Landscape) & Desktop Kecil */
 @media (max-width: 1024px) {
     nav {
@@ -786,4 +787,198 @@ footer {
     .footer-bottom p{
         font-size: 1rem;
     }
+      .logo-section {
+    margin: 20px 0 0 0;
+    max-width: 100%;
+  }
+  .develop-pembungkus,
+  .develop-container,
+  .daftar-section {
+    max-width: 95vw;
+    padding: 20px 10px;
+  }
+  .bootcamp-container .overlay h1,
+  .bootcamp-container .overlay h2 {
+    font-size: 3rem;
+  }
+  .about-section h1,
+  .about-section h2 {
+    font-size: 2.2rem;
+  }
 }
+
+
+/* Untuk Tablet (Portrait) */
+@media (max-width: 768px) {
+    .hero-title h1 {
+        font-size: 5em; /* 80px */
+        filter: drop-shadow(8px 8px 1px rgba(44, 44, 44, 0.3));
+    }
+    .hero-title p {
+        font-size: 2em; /* 32px */
+        filter: drop-shadow(8px 6px 1px rgba(44, 44, 44, 0.3));
+    }
+
+    /* Ubah tinggi section menjadi auto agar konten tidak terpotong */
+    .section-ke2, .section-ke3, .section-ke4 {
+        height: auto;
+        min-height: 100vh; /* Gunakan min-height sebagai pengganti */
+        padding: 80px 20px;
+    }
+
+    .section-ke2 h1, .section-ke3 h1, .section-ke4 h1 {
+        font-size: 3rem; /* 48px */
+    }
+    .section-ke3 .payment-info .p-1 {
+      font-size: 1.2rem;
+    }
+    .section-ke3 h1 {
+        max-width: 100%;
+    }
+
+    .section-ke3 .radio-buttons {
+        gap: 20px;
+    }
+
+    .radio-card {
+        width: 100%; /* Lebar penuh agar tumpuk rapi */
+    }
+
+    .custom-file-upload {
+        font-size: 1.5rem;
+    }
+
+    .custom-file-upload i {
+        font-size: 2rem;
+    }
+
+    .button-group .submit, .button-group .btn-kembali {
+        padding: 1rem 2.5rem; /* Kurangi padding tombol */
+        width: 100%;
+    }
+    
+    .button-group {
+        flex-direction: column; /* Tombol jadi vertikal */
+    }
+
+     /* =============== section Footer ================ */
+    .footer-text{
+      display: flex;
+      position: relative;
+      gap: 70px;
+      padding: 20px 0 0 20px;
+    }
+
+    .logo-section{
+      margin: 0;
+    }
+    .section-3{
+      margin-top: 0px; 
+    }
+    .footer-bottom p{
+      font-size: 1rem;
+    }
+}
+
+
+/* Untuk Mobile */
+@media (max-width: 480px) {
+  .sinergis-strip .live-hero {
+    height: 80px;
+  }
+  .live-hero .live {
+        padding: 0 20px;
+    }
+  .slider {
+    width: 99vw;
+    padding: 5px;
+  }
+  .about-section .kington 
+  {
+    width: 200px;
+    bottom: -10%;
+    left: -25%;
+  }
+  .about-section .segienam {
+    width: 200px;
+    bottom: -10%;
+    right: -25%;
+  }
+.about-section p {
+    font-size: 0.9rem
+  }
+    .about-section .kington2
+  {
+    width: 200px;
+    bottom: -45%;
+    right: -25%;
+  }
+.develop-container .putih {
+    width: 150px;
+    left: -10%;
+    bottom: 70%;
+}
+.develop-container .highlight {
+  font-size: 1.1rem;
+}
+.develop-container .highlight span {
+    font-size: 1.5rem;
+}
+.develop-container .kotak p {
+    font-size: 0.9rem;
+    text-align: left;
+}
+.develop-section .kotak {
+    max-width: 300px;
+    max-height: 180px;
+    padding: 10px;
+}
+
+
+
+    .card-dokumentasi {
+    width: 180px;
+    height: 110px;
+  }
+  .bootcamp-container {
+    height: 70vh;
+    padding: 0 5px;
+  }
+  .bootcamp-container .overlay h1,
+  .bootcamp-container .overlay h2 {
+    font-size: 2rem;
+  }
+    .btn-daftar {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+  .daftar-container h2,
+  .daftar-section h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+  .dokumentasi-section {
+    height: auto;
+    padding: 40px 10px 80px 10px;
+  }
+  .dokumentasi-section h2 {
+    font-size: 3rem;
+  }
+  .kington3 {
+    width: 300px;
+    bottom: 69%;
+    left: -50%;
+  }
+  .segienam2 {
+    width: 300px;
+    bottom: 70%;
+    right: -40%;
+  }
+
+}
+
