@@ -52,9 +52,10 @@ ul,li{
 /*==================== NAVBAR ====================*/
 nav {
     display: flex;
-    background: #FFF8F4;
-	background: linear-gradient(90deg, rgba(255, 248, 244, 1) 70%, rgba(141, 208, 249, 1) 100%);
-    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(255, 248, 244, 1) 70%, rgba(141, 208, 249, 1) 100%);
+    /* Diubah menjadi space-between agar logo & menu/icon terpisah di ujung */
+    justify-content: space-between; 
+    align-items: center; /* Pastikan semua item sejajar di tengah */
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -68,10 +69,13 @@ nav {
 nav .logo {
     display: flex;
     align-items: center;
-    width: 100vh;
+    /* PERBAIKAN: Hapus width: 100vh yang tidak tepat */
 }
-nav .logo img{
-    width: 10%;
+
+nav .logo img {
+    /* PERBAIKAN: Gunakan height untuk ukuran logo yang lebih konsisten */
+    height: 60px; 
+    width: auto;
     margin-right: 20px;
 }
 
@@ -83,11 +87,13 @@ nav .logo span {
 }
 
 nav ul {
-    
     display: flex;
     align-items: center;
     gap: 40px;
     list-style: none;
+    margin: 0; /* Reset margin default dari ul */
+    padding: 0; /* Reset padding default dari ul */
+    /* Transisi untuk animasi smooth saat menu muncul */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -98,8 +104,8 @@ nav ul li a {
     background: linear-gradient(180deg, #58090F, #7C0211);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 8px 0;
     transition: background 300ms, border-bottom 300ms;
     border-bottom: 1px solid rgba(221, 37, 37, 0);
@@ -109,19 +115,20 @@ nav ul li a:hover {
     background: linear-gradient(180deg, #000000b0, #ff0000);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border-bottom: 1px solid #ff0000b0;
 }
 
 .menu-icon {
     font-size: 2.5rem;
-    display: none;
+    display: none; /* Sembunyi di desktop */
+    cursor: pointer; /* Tambahkan cursor pointer */
     background: linear-gradient(180deg, #58090F, #7C0211);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Tombol daftar khusus */
@@ -143,11 +150,12 @@ nav ul li a:hover {
     height: 20px;
 }
 
-
 nav ul li a.register-btn:hover {
     background: #E39738;
     transform: scale(1.05);
+    border-bottom: none; /* Hapus border hover pada tombol */
 }
+
 
 
 /* =============== section Footer ================ */

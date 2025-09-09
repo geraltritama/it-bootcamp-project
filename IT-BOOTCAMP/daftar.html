@@ -8,32 +8,79 @@
 
     <!-- Stylesheets -->
     <link href="assets/css/daftar.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-
     <!-- Font -->
 
     <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="shortcut icon" href="assets/img/logo/pekanit.png" type="image/x-icon">
     <link rel="icon" href="assets/img/logo/pekanit.png" type="image/x-icon">
 
 </head>
 <body>
-    <div class="page-wrapper">
+    <!-- START NAVBAR -->
+    <nav>
+        <div class="logo">
+            <img src="assets/img/logo/itbootcamp.png" alt="" />
+            <span>IT BOOTCAMP</span>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="hidden" id="menu-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#dokumentation">Documentation</a></li>
+            <!-- Ganti FaQ dengan ikon daftar -->
+            <li>
+                <a href="#back" class="back-btn">
+                    Kembali
+                    <img src="assets/img/icon/panahkanan.png" alt="Daftar Icon" class="icon-daftar">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END NAVBAR -->
 
-        <!-- Start Hero Section -->
-        <section class="hero-section">
-            <div class="bg-layer"></div>
-            <div class="hero-title">
-                <h1>Pendaftaran</h1>
-                <p>IT Bootcamp</p>
-            </div>
-        </section>
-        <!-- End Hero Section -->
+    <!-- Start Hero Section -->
+    <section class="hero-section">
+        <div class="hero-title">
+            <h1>Pendaftaran</h1>
+            <p>IT Bootcamp</p>
+        </div>
+        <div class="live-hero">
+        <div class="live">
+          <img src="assets/img/daftar/hero/sinergis.png" alt="" />
+          <span>Sinergis</span>
+        </div>
+        <div class="live">
+          <img src="assets/img/daftar/hero/sinergis.png" alt="" />
+          <span>Sinergis</span>
+        </div>
+        <div class="live">
+          <img src="assets/img/daftar/hero/sinergis.png" alt="" />
+          <span>Sinergis</span>
+        </div>
+        <div class="live">
+          <img src="assets/img/daftar/hero/sinergis.png" alt="" />
+          <span>Sinergis</span>
+        </div>
+        <div class="live">
+          <img src="assets/img/daftar/hero/sinergis.png" alt="" />
+          <span>Sinergis</span>
+        </div>
+        <div class="live">
+          <img src="assets/img/daftar/hero/sinergis.png" alt="" />
+          <span>Sinergis</span>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
 
-        
-        <!-- Form Wrapper -->
-        <form id="form-pendaftaran-lomba" name ="form-pendaftaran-lomba" action="https://script.google.com/macros/s/AKfycbz1RGoiDB2eS9T-Dev5LHVWT0rPnSGVZNAU5vQwsrC_4t1jl4dX5xmMZ719FtI2whs/exec" method="post" enctype="multipart/form-data">
-            <!-- Section 2: Data Diri -->
+    
+    <!-- Form Wrapper -->
+    <form id="form-pendaftaran-lomba" class="form-card" name ="form-pendaftaran-lomba" action="https://script.google.com/macros/s/AKfycbz1RGoiDB2eS9T-Dev5LHVWT0rPnSGVZNAU5vQwsrC_4t1jl4dX5xmMZ719FtI2whs/exec" method="post" enctype="multipart/form-data">
+        <!-- Section 2: Data Diri -->
+        <div class="card-wrapper">
             <section class="section-ke2">
                 <div class="section-title">
                     <h1>Isi Data Diri</h1>
@@ -74,12 +121,12 @@
                 <div class="radio-buttons">
                     <label class="radio-card">
                         <input type="radio" name="payment_method" value="dana" />
-                        <img src="assets/img/section-3/dana.png" alt="Dana" />
+                        <img src="assets/img/daftar/section-3/dana.png" alt="Dana" />
                         <span class="span">Dana</span>
                     </label>
                     <label class="radio-card">
                         <input type="radio" name="payment_method" value="seabank" />
-                        <img src="assets/img/section-3/seabank.png" alt="Seabank" />
+                        <img src="assets/img/daftar/section-3/seabank.png" alt="Seabank" />
                         <span>Seabank</span>
                     </label>
                 </div>
@@ -133,74 +180,91 @@
                     </div>
                 </div>
             </section>
-        </form>
-        <!-- End of Form -->
+        </div>
+    </form>
+    <!-- End of Form -->
 
+    <!----Start Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="logo-section">
+          <img src="assets/img/logo/himtika.png" alt="HIMTIKA Logo" class="logo-footer"/>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/himtika_unsika/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/himtika/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@himtikaofficial4428" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@himtika_unsika" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-text">
+          <div class="footer-section section-1">
+            <h4>Media</h4>
+            <ul>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#">Artikel HIMTIKA</a></li>
+              <li><a href="#">Beasiswa</a></li>
+              <li><a href="#">Kegiatan Mahasiswa</a></li>
+            </ul>
+          </div>
 
-        <!----Start Footer-->
-        <footer>
-            <div class="footer-container">
-                <div class="logo-section">
-                    <img src="assets/img/logo/himtika.png" alt="HIMTIKA Logo" class="logo-footer">
-                    <h3>HIMTIKA</h3>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/himtika_unsika/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/himtika/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://www.youtube.com/@himtikaofficial4428" target="_blank"><i
-                                class="fab fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/@himtika_unsika" target="_blank"><i
-                                class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="footer-text">
-                    <div class="footer-section section-1">
-                        <h4>Media</h4>
-                        <ul>
-                            <li><a href="#">Berita</a></li>
-                            <li><a href="#">Artikel HIMTIKA</a></li>
-                            <li><a href="#">Beasiswa</a></li>
-                            <li><a href="#">Kegiatan Mahasiswa</a></li>
-                        </ul>
-                    </div>
+          <div class="footer-section section-2">
+            <h4>Event</h4>
+            <ul>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/semantik_9/">SEMANTIK 9.0</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/pekan-it/">PEKAN IT</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/lkmmpd/">LKMM-PD</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/diesnatalis">Dienatalis</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/it-bootcamp/">IT Bootcamp</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/open-project/">Open Project</a>
+              </li>
+            </ul>
+          </div>
 
-                    <div class="footer-section section-2">
-                        <h4>Event</h4>
-                        <ul>
-                            <li><a href="https://himtika.cs.unsika.ac.id/semantik_9/">SEMANTIK</a></li>
-                            <li><a href="https://pekan-it-eight.vercel.app/">PEKAN IT</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/lkmmpd/">LKMM-PD</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/diesnatalis">Dienatalis</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/it-bootcamp/">IT Bootcamp</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/open-project/">Open Project</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-section section-3">
-                        <h4>Aplikasi Publik</h4>
-                        <ul>
-                            <li><a href="https://himtika.cs.unsika.ac.id/corporation/">Corporation</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/himtika-awards/">HIMTIKA Award</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/studyclub-2024/">Study Club</a></li>
-                            <li><a href="https://himtika.cs.unsika.ac.id/corporation/">Studio IT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-line"></div> <!-- Purple Line -->
-                <p>Licensed, Registered and authorized by</p>
-                <div class="footer-logo-container">
-                    <img src="assets/img/logo/himtika.png" alt="HIMTIKA Logo" class="footer-logo">
-                    <p>HIMTIKA 2025</p>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer End -->
-
-    </div>
-    <!--End pagewrapper-->
+          <div class="footer-section section-3">
+            <h4>Aplikasi Publik</h4>
+            <ul>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/corporation/">Corporation</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/himtika-awards/">HIMTIKA Award</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/studyclub-2024/">Study Club</a>
+              </li>
+              <li>
+                <a href="https://himtika.cs.unsika.ac.id/corporation/">Studio IT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-line"></div>
+        <!-- Purple Line -->
+        <p>Licensed, Registered and authorized by</p>
+        <div class="footer-logo-container">
+          <img
+            src="assets/img/logo/himtika.png"
+            alt="HIMTIKA Logo"
+            class="footer-logo"
+          />
+          <p>HIMTIKA 2025</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
     <!-- Scripts -->
     <script src="assets/js/googlesheet/pendaftaranLomba.js"></script>
