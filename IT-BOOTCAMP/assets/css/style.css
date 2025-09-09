@@ -210,6 +210,29 @@ nav ul li a.register-btn:hover {
 }
 /* end hero */
 
+/* start sinergis */
+.sinergis-strip {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #141b2d;
+  height: 40px;
+}
+
+.sinergis-strip .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.sinergis-strip img {
+  height: 18px;
+}
+/* end sinergis */
+
 /* start about */
 .about-bootcamp {
   position: relative;
@@ -270,6 +293,7 @@ nav ul li a.register-btn:hover {
   height: auto;
 }
 /* end about */
+
 /* =============== section Footer ================ */
 footer {
 	background-color: #E39738;
