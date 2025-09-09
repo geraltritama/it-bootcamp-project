@@ -146,6 +146,7 @@ nav ul li a:hover {
 
 nav ul li a.register-btn:hover {
     background: #E39738;
+    background-color: #4b2e0e;
     transform: scale(1.05);
 }
 
@@ -205,6 +206,7 @@ nav ul li a.register-btn:hover {
 }
 
 .btn-daftar:hover {
+    color: #E39738;
     background-color: #4b2e0e;
     transform: scale(1.05);
 }
@@ -268,6 +270,8 @@ nav ul li a.register-btn:hover {
 
 /* start develop */
 .develop-section {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   border: 2px solid red;
   background: #E39738;
 }
@@ -295,77 +299,104 @@ nav ul li a.register-btn:hover {
       max-width: 800px;
       border: solid 2px red;
 }
+.highlight {
+      color: #251907 ;
+      font-weight: bold;
+      
+}
 
+.highlight span{
+    font-family: "Belanosima", sans-serif;
+    color: #FFF;
+    font-weight: lighter;
+    font-size: 4.5rem;
+}
 .develop-section h3 {
-      font-size: 2.5rem;
+      font-size: 3.7rem;
       margin: 0;
       text-align: left;
 }
 
 .develop-section p {
-      font-size: 1.2rem;
-      margin: 10px 0 0 0;
-      text-align: left;
-      line-height: 1.5;
-      max-width: 500px;
+  font-family: 'plus-jakarta-sans', sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+  text-align: justify;
+  line-height: 1.5;
+  max-width: 500px;
+  color: #FFF;
 }
 .kotak {
-      background: linear-gradient(135deg, #3A3524, #696548);
-      padding: 20px;
-      border-radius: 8px;
+      background: linear-gradient(130deg, rgba(58, 53, 36, 1) 0%, rgba(105, 101, 72, 1) 100%);
+      padding: 15px;
+      border-radius: 30px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
+      max-width: 500px;
       margin: 20px auto;
 }
 
 /* daftar section */
 .daftar-section {
-      margin: 100px auto;
-      font-family: 'Montsebrrat', sans-serif;
-      background: #E39738;
-      color: #fff;
-      padding: 40px;
-      border-radius: 40px;
-      text-align: center;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 800px;
-      border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    padding: 24px 20px;
+    font-family: 'Montsebrrat', sans-serif;
+    background: linear-gradient(180deg, rgba(226, 151, 56, 1) 0%, rgba(124, 83, 31, 1) 100%);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    border: solid 2px red;
 }
 
-.daftar-section h2 {
-      font-family: "Belanosima", sans-serif;
-      font-size: 3rem;
-      font-weight: lighter;
-      color: #4A320E;
-      margin-bottom: 20px;
+.daftar-section > div:first-child {
+    margin-bottom: 0; /* hilangkan jarak bawah logo */
+}
+
+.daftar-container h2 {
+  margin-top: -40px;
+    margin-bottom: 4px; /* rapatkan h2 dan h3 */
+    color: black;
+    font-family: "Belanosima", sans-serif;
+    font-weight: lighter;
+    font-size: 3.5rem;
 }
 
 .daftar-section h3 {
-      font-family: 'Namecat', sans-serif;
-      font-size: 2rem;
-      color: #4A320E;
-      margin-bottom: 20px;
+  font-family: 'Namecat', sans-serif;
+  font-size: 3.5rem;
+  color: #4A320E;
+  margin-bottom: 10px; /* rapatkan h3 dan tombol */
+  margin-top: 0;
 }
+
 .daftar-container span {
-     color: black;
-      font-family: "Belanosima", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-family: "Belanosima", sans-serif;
 }
 
 .btn {
+    font-family: 'plus-jakarta-sans', sans-serif;
       display: inline-block;
       background: #fff;
       color: #000;
       font-weight: 600;
-      padding: 10px 20px;
+      padding: 20px 300px;
       border-radius: 8px;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 20px;
       transition: all 0.2s ease-in-out;
     }
 .btn:hover {
-      background: #f1f1f1;
-      transform: scale(1.1);
+    color: #E39738;
+    background-color: #4b2e0e;
+    transform: scale(1.05);
 }
 
 /*==================== DOKUMENTASI SECTION ====================*/
@@ -376,7 +407,8 @@ nav ul li a.register-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #7C0211;
+    background: #E29738;
+    background: linear-gradient(1deg, rgba(226, 151, 56, 1) 0%, rgba(74, 50, 14, 1) 100%);
     color: #ffffff;
     padding: 20px;
     position: relative;
