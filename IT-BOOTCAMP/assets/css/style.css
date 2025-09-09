@@ -109,9 +109,9 @@ nav ul li a {
     padding: 8px 0;
     transition: background 300ms, border-bottom 300ms;
     border-bottom: 1px solid rgba(221, 37, 37, 0);
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background: linear-gradient(180deg, #000000b0, #ff0000);
     background-clip: text;
     color: transparent;
@@ -121,40 +121,40 @@ nav ul li a:hover {
 }
 
 .menu-icon {
-    font-size: 2.5rem;
-    display: none; /* Sembunyi di desktop */
-    cursor: pointer; /* Tambahkan cursor pointer */
-    background: linear-gradient(180deg, #58090F, #7C0211);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  display: none; /* Sembunyi di desktop */
+  cursor: pointer; /* Tambahkan cursor pointer */
+  background: linear-gradient(180deg, #58090F, #7C0211);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Tombol daftar  */
 .register-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
-    background: #6E5B3E;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  background: #6E5B3E;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
 }
 
 .register-btn img.icon-daftar {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 nav ul li a.register-btn:hover {
-    background: #E39738;
-    background-color: #4b2e0e;
-    transform: scale(1.05);
-    border-bottom: none; /* Hapus border hover pada tombol */
+  background: #E39738;
+  background-color: #4b2e0e;
+  transform: scale(1.05);
+  border-bottom: none; /* Hapus border hover pada tombol */
 }
 
 /* hero section */
@@ -184,11 +184,11 @@ nav ul li a.register-btn:hover {
 }
 
 .overlay h2 {
-    font-family: 'Namecat', sans-serif;
-    font-size: 6rem;
-    color: #807056;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-    margin: 10px 0 20px 0;
+  font-family: 'Namecat', sans-serif;
+  font-size: 6rem;
+  color: #807056;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  margin: 10px 0 20px 0;
 }
 
 .btn-daftar {
@@ -205,83 +205,105 @@ nav ul li a.register-btn:hover {
     box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
     font-family: 'Namecat', sans-serif;
-}
-
-.btn-daftar span {
+  }
+  
+  .btn-daftar span {
     font-size: 1.2rem;
-}
-
-.btn-daftar:hover {
+  }
+  
+  .btn-daftar:hover {
     color: #E39738;
     background-color: #4b2e0e;
     transform: scale(1.05);
-}
-
-
-/* end hero */
-
-/* start sinergis */
-.sinergis-strip .live-hero {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #141b2d;
-  height: 40px;
-  align-items: center;
-  gap: 5px;
-  color: white;
-  font-style: italic;
-  font-size: 14px;
-}
-
-@keyframes tickerMove {
+  }
+  
+  
+  
+  /* end hero */
+  
+  /* start sinergis */
+  .sinergis-strip .live-hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #141b2d;
+    height: 40px;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  @keyframes tickerMove {
     from {
         transform: translateX(0);
     }
     to {
         transform: translateX(-100%);
+      }
     }
-}
-
-.live-hero .live {
-    display: flex;
-    align-items: center;
-    padding: 0 70px;
-    flex-shrink: 0;
-    animation: tickerMove 3s linear infinite;
-}
-.live-hero img {
-    width: 40%;
-    max-width: 150px; 
+    
+    .live-hero .live {
+      display: flex;
+      align-items: center;
+      padding: 0 70px;
+      flex-shrink: 0;
+      animation: tickerMove 3s linear infinite;
+    }
+    .live-hero img {
+      width: 40%;
+      max-width: 150px; 
 }
 .live-hero span {
-    color: white;
+  color: white;
     font-weight: 600;
     font-style: italic;
     font-size: 1rem;
-}
-/* end sinergis */
-
-/* start about */
-.about-section {
-  margin-top: -47px;
-  background: linear-gradient(1deg,rgba(226, 151, 56, 1) 50%, rgba(124, 83, 31, 1) 100%);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.about-section h1 {
-  padding-top: 100px;
-  font-family: 'Namecat', sans-serif;
-  font-size: 3.5rem;
-  color: #4A320E;
-  margin-bottom: 20px;
-}
-
+  }
+  /* end sinergis */
+  
+  /* start about */
+  .about-section .kington {
+      position: absolute;
+      width: 400px;
+      bottom: -80%;
+      left: -12%;
+      z-index: 10;
+  }
+   .about-section .kington2 {
+      position: absolute;
+      width: 400px;
+      bottom: -150%;
+      right: -12%;
+      z-index: 10;
+  }
+  .about-section .segienam {
+      position: absolute;
+      width: 400px;
+      bottom: -79%;
+      right: -5%;
+      z-index: 0;
+  }
+  .about-section {
+    margin-top: -47px;
+    background: linear-gradient(1deg,rgba(226, 151, 56, 1) 50%, rgba(124, 83, 31, 1) 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-section h1 {
+    padding-top: 100px;
+    font-family: 'Namecat', sans-serif;
+    font-size: 3.5rem;
+    color: #E39738;
+    margin-bottom: 20px;
+  }
+  
 .about-section h2 {
   font-family: 'Namecat', sans-serif;
   font-size: 3.5rem;
-  color: #4A320E;
+  color: #DBD6CF;
   margin-bottom: 20px;
   margin: 10px 0 20px 0;
 }
@@ -293,11 +315,18 @@ nav ul li a.register-btn:hover {
   max-width: 800px;
   margin: 0 auto 30px auto;
   line-height: 1.6;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 /* end about */
 
 /* start develop */
+.develop-container .putih {
+      position: absolute;
+      width: 200px;
+      bottom: 50%;
+      left: 20%;
+      z-index: 1;
+  }
 .develop-section {
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -440,6 +469,21 @@ nav ul li a.register-btn:hover {
 }
 
 /*==================== DOKUMENTASI SECTION ====================*/
+.kington3 {
+    position: absolute;
+    width: 500px;
+    bottom: 63%;
+    left: -20%;
+    z-index: 10;
+}
+
+.segienam2 {
+    position: absolute;
+    width: 530px;
+    bottom: 66%;
+    right: -1%;
+    z-index: 10;
+}
 .wrapper-dokumentasi {
     position: relative;
     background-color: #87CEFA;
