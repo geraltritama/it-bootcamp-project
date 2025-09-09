@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Figtree');
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap');
-
-
 body {
     padding: 0;
     margin: 0;
     background-color: #87CEFA;
     box-sizing: border-box; 
+    font-family: "Plus Jakarta Sans";
 }
 
 *, *::before, *::after {
@@ -148,18 +145,21 @@ nav ul li a.back-btn:hover {
 .hero-section .hero-title {
     position: relative;
     z-index: 1;
-    font-family: "Oxanium";
+    font-family: "Namecat", sans-serif;
     letter-spacing: -3px;
+    margin-bottom: 5rem;
 }
 .hero-title h1 {
     font-weight: 600;
     font-size: 9.375em; 
     margin: 0;
+    color: #4A320E;
     filter: drop-shadow(15px 15px 1px rgba(44, 44, 44, 0.3));
 }
 .hero-title p {
     font-size: 3.125em; 
     margin: 0;
+    color: #807056;
     filter: drop-shadow(15px 10px 1px rgba(44, 44, 44, 0.3));
 }
 .hero-section .live-hero {
@@ -704,7 +704,6 @@ footer {
 }
 
 
-
 /* =============== Responsive Media Queries ================ */
 
 /* Untuk Tablet (Landscape) & Desktop Kecil */
@@ -756,15 +755,14 @@ footer {
     }
 
      /* =============== section Footer ================ */
+    .logo-section {
+        margin: 20px 0;
+    }
     .footer-text{
         display: flex;
         position: relative;
         gap: 70px;
         padding: 20px 0 0 20px;
-    }
-
-    .logo-section{
-        width: 35%;
     }
     .section-3{
         margin-top: -40px; 
@@ -796,7 +794,9 @@ footer {
     .section-ke2 h1, .section-ke3 h1, .section-ke4 h1 {
         font-size: 3rem; /* 48px */
     }
-    
+    .section-ke3 .payment-info .p-1 {
+      font-size: 1.2rem;
+    }
     .section-ke3 h1 {
         max-width: 100%;
     }
@@ -835,7 +835,7 @@ footer {
     }
 
     .logo-section{
-      width: 35%;
+      margin: 0;
     }
     .section-3{
       margin-top: 0px; 
