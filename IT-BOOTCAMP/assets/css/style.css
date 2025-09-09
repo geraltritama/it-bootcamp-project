@@ -3,7 +3,7 @@ body {
 	margin:0px;
 	padding:0px;
 	box-sizing: border-box;
-	background-color: #000;
+	background-color: #fff;
 	font-family: "plus-jakarta-sans", sans-serif;
 }
 a {
@@ -165,7 +165,7 @@ nav ul li a.register-btn:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  border: 2px solid red;
 }
 
 .overlay h1 {
@@ -217,6 +217,7 @@ nav ul li a.register-btn:hover {
   align-items: center;
   background-color: #141b2d;
   height: 40px;
+  
 }
 
 .sinergis-strip .item {
@@ -234,65 +235,229 @@ nav ul li a.register-btn:hover {
 /* end sinergis */
 
 /* start about */
-.about-bootcamp {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 60px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background: linear-gradient(180deg, #f4a261 0%, #2d2d2d 100%);
-  color: #fff;
-  overflow: hidden;
+.about-section {
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-section h1 {
+  font-family: 'Namecat', sans-serif;
+  font-size: 3.5rem;
+  color: #4A320E;
+  margin-bottom: 20px;
 }
 
-.content {
-  max-width: 60%;
-  z-index: 2;
+.about-section h2 {
+  font-family: 'Namecat', sans-serif;
+  font-size: 3.5rem;
+  color: #4A320E;
+  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
 }
 
-.subtitle {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #f7a76c; /* oranye */
-  margin: 0;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #fff;
-  margin: 5px 0 20px;
-}
-
-.description {
-  font-size: 1.1rem;
+.about-section p {
+  font-family: "Belanosima", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
   line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.innovation h3 {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 0 10px;
-}
-
-.innovation h3 span {
-  color: #58a6ff; /* biru terang */
-}
-
-.innovation p {
-  font-size: 0.9rem;
-  color: #ddd;
-  max-width: 400px;
-}
-
-.logo img {
-  width: 200px;
-  height: auto;
 }
 /* end about */
+
+/* start develop */
+.develop-section {
+  border: 2px solid red;
+  background: #E39738;
+}
+
+.develop-pembungkus {
+      margin: auto;
+      font-family: 'Montsebrrat', sans-serif;
+      background: #E39738;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      border: solid 2px red;
+}
+.develop-container {
+      margin: auto;
+      font-family: 'Montserrat', sans-serif;
+      background: #E39738;
+      color: #fff;
+      padding: 40px;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      border: solid 2px red;
+}
+
+.develop-section h3 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-align: left;
+}
+
+.develop-section p {
+      font-size: 1.2rem;
+      margin: 10px 0 0 0;
+      text-align: left;
+      line-height: 1.5;
+      max-width: 500px;
+}
+.kotak {
+      background: linear-gradient(135deg, #3A3524, #696548);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 20px auto;
+}
+
+/* daftar section */
+.daftar-section {
+      margin: 100px auto;
+      font-family: 'Montsebrrat', sans-serif;
+      background: #E39738;
+      color: #fff;
+      padding: 40px;
+      border-radius: 40px;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      border: solid 2px red;
+}
+
+.daftar-section h2 {
+      font-family: "Belanosima", sans-serif;
+      font-size: 3rem;
+      font-weight: lighter;
+      color: #4A320E;
+      margin-bottom: 20px;
+}
+
+.daftar-section h3 {
+      font-family: 'Namecat', sans-serif;
+      font-size: 2rem;
+      color: #4A320E;
+      margin-bottom: 20px;
+}
+.daftar-container span {
+     color: black;
+      font-family: "Belanosima", sans-serif;
+}
+
+.btn {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s ease-in-out;
+    }
+.btn:hover {
+      background: #f1f1f1;
+      transform: scale(1.1);
+}
+
+/*==================== DOKUMENTASI SECTION ====================*/
+.dokumentasi-section {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C0211;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+
+.dokumentasi-section h2 {
+    padding-top: 100px;
+    font-size: clamp(4.5rem, 8.64086vw, 5rem);
+    font-weight: bold;
+}
+
+.dokumentasi-section p {
+    color: #ffffff;
+    max-width: 700px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin: 16px auto;
+    line-height: 30px;
+    text-align: center;
+}
+.dokumentasi-section .star {
+    position: absolute;
+    width: 150px;
+    top: 8%;
+    left: 10%;
+}
+.dokumentasi-section .awan {
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    right: 8%;
+}
+.slider {
+  width: 85%;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-right 40s linear infinite;
+    will-change: transform;
+}
+
+.slider-left .slider-track {
+    animation: scroll-left 40s linear infinite;
+}
+
+.card-dokumentasi {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.card-dokumentasi:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Animasi scroll */
+@keyframes scroll-right {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
 
 /* =============== section Footer ================ */
 footer {
