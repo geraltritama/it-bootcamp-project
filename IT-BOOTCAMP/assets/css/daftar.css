@@ -9,6 +9,9 @@ body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
 
 .form-card {
     padding: 5rem;
