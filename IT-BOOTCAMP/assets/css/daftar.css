@@ -48,9 +48,14 @@ nav .logo img {
   width: auto;
   margin-right: 20px;
 }
-
+.gradient-text {
+  background: linear-gradient(180deg, rgba(74, 50, 14, 1) 0%, rgba(226, 151, 56, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* khusus Chrome/Safari */
+  background-clip: text; /* untuk browser yang support */
+  color: transparent; /* fallback */
+}
 nav .logo span {
-  color: #7B0211;
   font-size: 32px;
   font-weight: 700;
   word-wrap: break-word;
@@ -275,7 +280,7 @@ nav ul li a.back-btn:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 250vh;
     color: white;
     text-align: center;
     justify-content: center;
@@ -449,7 +454,7 @@ nav ul li a.back-btn:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 220vh;
     padding: 50px 20px;
     color: white;
     text-align: center;
