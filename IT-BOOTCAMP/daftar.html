@@ -84,7 +84,7 @@
 
     
     <!-- Form Wrapper -->
-    <form id="form-pendaftaran-lomba" class="form-card" name ="form-pendaftaran-lomba" action="https://script.google.com/macros/s/AKfycbz1RGoiDB2eS9T-Dev5LHVWT0rPnSGVZNAU5vQwsrC_4t1jl4dX5xmMZ719FtI2whs/exec" method="post" enctype="multipart/form-data">
+    <form id="form-pendaftaran-lomba" class="form-card" name="form-pendaftaran-lomba">
         <!-- Section 2: Data Diri -->
         <div class="card-wrapper">
             <section class="section-ke2">
@@ -143,7 +143,7 @@
                 <div class="form-2">
                     <span class="input-span-2">
                         <label for="payment_proof" class="label-2">Upload Bukti Pembayaran :</label>
-                        <input type="file" id="payment_proof" style="display: none;" />
+                        <input type="file" name="payment_proof" id="payment_proof" style="display: none;" required />
                         <div id="upload-wrapper" class="upload-wrapper">
                             <label for="payment_proof" class="custom-file-upload" id="upload-label">
                                 <i class="fa-solid fa-cloud-arrow-up"></i> &nbsp; Pilih File
@@ -273,8 +273,21 @@
     <!-- Footer End -->
 
     <!-- Scripts -->
-    <script src="assets/js/googlesheet/pendaftaranLomba.js"></script>
+    <script src="assets/js/pendaftaran.js"></script>
     <script src="assets/js/jquery.js"></script>
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="custom-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div id="modal-icon"></div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <button id="modal-close-button" class="modal-button">Tutup</button>
+        </div>
+    </div>
+
     <script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
