@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link href="assets/css/daftar.css" rel="stylesheet">
+    <link href="assets/css/preloader.css" rel="stylesheet">
 
     <!-- Font -->
     <link href="https://fonts.cdnfonts.com/css/namecat" rel="stylesheet">
@@ -23,6 +24,112 @@
 
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader-scene">
+        <div class="scene">
+          <div class="forest">
+            <div class="tree tree1">
+              <div class="branch branch-top"></div>
+              <div class="branch branch-middle"></div>
+            </div>
+            <div class="tree tree2">
+                <div class="branch branch-top"></div>
+                <div class="branch branch-middle"></div>
+                <div class="branch branch-bottom"></div>
+            </div>
+            <div class="tree tree3">
+                <div class="branch branch-top"></div>
+                <div class="branch branch-middle"></div>
+                <div class="branch branch-bottom"></div>
+            </div>
+            <div class="tree tree4">
+                <div class="branch branch-top"></div>
+                <div class="branch branch-middle"></div>
+                <div class="branch branch-bottom"></div>
+            </div>
+            <div class="tree tree5">
+                <div class="branch branch-top"></div>
+                <div class="branch branch-middle"></div>
+                <div class="branch branch-bottom"></div>
+            </div>
+            <div class="tree tree6">
+                <div class="branch branch-top"></div>
+                <div class="branch branch-middle"></div>
+                <div class="branch branch-bottom"></div>
+            </div>
+            <div class="tree tree7">
+                <div class="branch branch-top"></div>
+                <div class="branch branch-middle"></div>
+                <div class="branch branch-bottom"></div>
+            </div>
+          </div>
+          <div class="tent">
+              <div class="roof"></div>
+              <div class="roof-border-left">
+                <div class="roof-border roof-border1"></div>
+                <div class="roof-border roof-border2"></div>
+                <div class="roof-border roof-border3"></div>
+              </div>
+              <div class="entrance">
+                <div class="door left-door">
+                  <div class="left-door-inner"></div>
+                </div>
+                <div class="door right-door">
+                  <div class="right-door-inner"></div>
+                </div>
+              </div>
+            </div>
+          <div class="floor">
+              <div class="ground ground1"></div>
+              <div class="ground ground2"></div>
+            </div>
+          <div class="fireplace">
+            <div class="support"></div>
+            <div class="support"></div>
+            <div class="bar"></div>
+            <div class="hanger"></div>
+            <div class="smoke"></div>
+            <div class="pan"></div>
+            <div class="fire">
+              <div class="line line1">
+                <div class="particle particle1"></div>
+                <div class="particle particle2"></div>
+                <div class="particle particle3"></div>
+                <div class="particle particle4"></div>
+              </div>
+              <div class="line line2">
+                <div class="particle particle1"></div>
+                <div class="particle particle2"></div>
+                <div class="particle particle3"></div>
+                <div class="particle particle4"></div>
+              </div>
+              <div class="line line3">
+                <div class="particle particle1"></div>
+                <div class="particle particle2"></div>
+                <div class="particle particle3"></div>
+                <div class="particle particle4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="time-wrapper">
+            <div class="time">
+              <div class="day"></div>
+              <div class="night">
+                <div class="moon"></div>
+                <div class="star star1 star-big"></div>
+                <div class="star star2 star-big"></div>
+                <div class="star star3 star-big"></div>
+                <div class="star star4"></div>
+                <div class="star star5"></div>
+                <div class="star star6"></div>
+                <div class="star star7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
     <!-- START NAVBAR -->
     <nav>
         <div class="logo">
@@ -33,12 +140,12 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <ul class="hidden" id="menu-list">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#dokumentation">Documentation</a></li>
             <!-- Ganti FaQ dengan ikon daftar -->
             <li>
-                <a href="home.html" class="back-btn">
+                <a href="index.html" class="back-btn">
                     Kembali
                     <img src="assets/img/icon/panahkanan.png" alt="Daftar Icon" class="icon-daftar">
                 </a>
@@ -84,7 +191,6 @@
 
     
     <!-- Form Wrapper -->
-    <form id="form-pendaftaran-lomba" class="form-card" name ="form-pendaftaran-lomba" action="https://script.google.com/macros/s/AKfycbysee4Kqv60b94KP5kqAVSvP7zZk52fkyTuizbDCh8M50JDHQ7vSwFzt46uxR1cH5qN6g/exec" method="post" enctype="multipart/form-data">
         <!-- Section 2: Data Diri -->
         <div class="card-wrapper">
             <section class="section-ke2">
@@ -142,8 +248,6 @@
                 </div>
                 <div class="form-2">
                     <span class="input-span-2">
-                        <label for="payment_proof" class="label-2">Upload Bukti Pembayaran :</label>
-                        <input type="file" name="Link Bukti Pembayaran" id="payment_proof" style="display: none;" />
                         <div id="upload-wrapper" class="upload-wrapper">
                             <label for="payment_proof" class="custom-file-upload" id="upload-label">
                                 <i class="fa-solid fa-cloud-arrow-up"></i> &nbsp; Pilih File
@@ -273,8 +377,21 @@
     <!-- Footer End -->
 
     <!-- Scripts -->
-    <script src="assets/js/googlesheet/pendaftaranLomba.js"></script>
+    <script src="assets/js/pendaftaran.js"></script>
     <script src="assets/js/jquery.js"></script>
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="custom-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div id="modal-icon"></div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <button id="modal-close-button" class="modal-button">Tutup</button>
+        </div>
+    </div>
+
     <script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

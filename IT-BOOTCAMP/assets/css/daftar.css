@@ -708,6 +708,110 @@ footer {
     background-color: #000000b0;
 }
 
+/* =============== UX: Loading & Modal Pop Up =============== */
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Disembunyikan secara default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #E39738; /* Warna emas dari tema */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Custom Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Disembunyikan secara default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+}
+
+.modal-box {
+    background: linear-gradient(180deg, #4A320E, #9e6927);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 90%;
+    width: 450px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    border: 3px solid #E39738;
+}
+
+.modal-overlay.show .modal-box {
+    transform: scale(1);
+}
+
+#modal-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+#modal-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Oxanium", sans-serif;
+    font-size: 2rem;
+}
+
+#modal-message {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.modal-button {
+    background-color: #fff;
+    color: #4A320E;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal-button:hover {
+    transform: scale(1.05);
+}
+
 
 /* =============== Responsive Media Queries ================ */
 

@@ -1,3 +1,12 @@
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    // Tunggu sebentar setelah halaman selesai dimuat, lalu sembunyikan preloader
+    setTimeout(() => {
+        preloader.classList.add('preloader-hidden');
+    }, 500); // Waktu tunggu 0.5 detik untuk efek lebih halus
+});
+
 // Mencegah Inspect Element dan View Source
 document.addEventListener("keydown", function (event) {
   if (
@@ -51,7 +60,7 @@ menuIcon.addEventListener("click", () => {
     }, 300);
   }
 });
-document.querySelectorAll("#menu-list a").forEach((link) => {
+document.querySelectorAll('#menu-list a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault(); // Mencegah loncatan instan ke bagian yang diklik
 
