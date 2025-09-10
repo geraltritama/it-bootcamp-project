@@ -37,37 +37,21 @@ document.querySelectorAll("img").forEach((img) => {
   img.addEventListener("contextmenu", (event) => event.preventDefault());
 });
 
-// NAVBAR
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
+// Toggle buka/tutup menu
 menuIcon.addEventListener("click", () => {
-  if (menuList.classList.contains("hidden")) {
-    menuList.classList.remove("hidden");
-    menuList.style.transform = "translateY(-10px)";
-    menuList.style.opacity = "0";
-
-    setTimeout(() => {
-      menuList.style.transform = "translateY(0)";
-      menuList.style.opacity = "1";
-    }, 10);
-  } else {
-    menuList.style.transform = "translateY(-10px)";
-    menuList.style.opacity = "0";
-
-    setTimeout(() => {
-      menuList.classList.add("hidden");
-    }, 300);
-  }
+  menuList.classList.toggle("active");
 });
+
+// Tutup menu saat link diklik (khusus mobile)
 document.querySelectorAll("#menu-list a").forEach((link) => {
   link.addEventListener("click", (e) => {
     const href = link.getAttribute("href");
 
-    // Jika link internal (#about, #dokumentation, dst)
     if (href.startsWith("#")) {
-      e.preventDefault(); // cegah default hanya untuk link internal
-
+      e.preventDefault(); // hanya cegah scroll instan untuk anchor dalam halaman
       const targetId = href.substring(1);
       const targetElement = document.getElementById(targetId);
 
@@ -78,8 +62,14 @@ document.querySelectorAll("#menu-list a").forEach((link) => {
         });
       }
     }
+
+    // Setelah klik, tutup menu jika mobile
+    if (window.innerWidth <= 1024) {
+      menuList.classList.remove("active");
+    }
   });
 });
+
 
 
 // LIVE HERO SECTION
