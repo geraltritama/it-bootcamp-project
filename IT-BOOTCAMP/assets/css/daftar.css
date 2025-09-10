@@ -211,7 +211,7 @@ nav ul li a.back-btn:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 180vh;
     color: white;
     text-align: center;
     justify-content: center;
@@ -280,7 +280,7 @@ nav ul li a.back-btn:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 250vh;
+    height: 180vh;
     color: white;
     text-align: center;
     justify-content: center;
@@ -454,7 +454,7 @@ nav ul li a.back-btn:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 220vh;
+    height: 150vh;
     padding: 50px 20px;
     color: white;
     text-align: center;
