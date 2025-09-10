@@ -25,9 +25,9 @@ document.addEventListener("keydown", function (event) {
   }
 });
 // Mencegah Klik Kanan
-// document.addEventListener("contextmenu", function (event) {
-//   event.preventDefault();
-// });
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
 // Mencegah Drag & Drop pada Semua Gambar
 document.addEventListener("dragstart", function (event) {
   event.preventDefault();
@@ -60,30 +60,27 @@ menuIcon.addEventListener("click", () => {
     }, 300);
   }
 });
-document.querySelectorAll('#menu-list a[href^="#"]').forEach((link) => {
+document.querySelectorAll("#menu-list a").forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault(); // Mencegah loncatan instan ke bagian yang diklik
+    const href = link.getAttribute("href");
 
-    const targetId = link.getAttribute("href").substring(1); // Mengambil ID tujuan
-    const targetElement = document.getElementById(targetId);
+    // Jika link internal (#about, #dokumentation, dst)
+    if (href.startsWith("#")) {
+      e.preventDefault(); // cegah default hanya untuk link internal
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80, // Sesuaikan offset agar tidak tertutup navbar
-        behavior: "smooth", // Efek transisi scroll
-      });
-    }
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
 
-    // Tutup menu setelah diklik di tampilan mobile
-    if (window.innerWidth <= 768) {
-      menuList.style.transform = "translateY(-10px)";
-      menuList.style.opacity = "0";
-      setTimeout(() => {
-        menuList.classList.add("hidden");
-      }, 300);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
     }
   });
 });
+
 
 // LIVE HERO SECTION
 document.addEventListener("DOMContentLoaded", function () {
@@ -96,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     liveHero.appendChild(clone);
   });
 });
+
 // DOKUMENTASI SECTION
 document.querySelectorAll('.slider-track').forEach(track => {
   track.innerHTML += track.innerHTML; // Gandakan isi track
@@ -111,3 +109,23 @@ function openPopup(imageSrc) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
+// UPLOAD FILE
+  document.addEventListener("DOMContentLoaded", function () {
+	const fileInput = document.getElementById("payment_proof");
+	const uploadSuccess = document.getElementById("upload-success");
+	const changeFileButton = document.getElementById("change-file-button");
+	const uploadLabel = document.getElementById("upload-label");
+
+	fileInput.addEventListener("change", function () {
+		if (fileInput.files.length > 0) {
+			uploadSuccess.style.display = "inline";
+			changeFileButton.style.display = "inline-block";
+			uploadLabel.style.display = "none";
+		}
+	});
+
+	changeFileButton.addEventListener("click", function () {
+		fileInput.click(); // Buka dialog pilih file lagi
+	});
+});
